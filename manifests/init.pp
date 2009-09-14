@@ -1,4 +1,4 @@
-class mailserver::imapd {
+class courier {
   package { 
       "courier-imap": ensure => installed;
     }
