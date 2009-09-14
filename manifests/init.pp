@@ -6,6 +6,7 @@ class courier {
       "courier-imap":
         enable => true, 
         ensure => running,
-        require => Package["courier-imap"];
+        require => Package["courier-imap"],
+        provider => debian;
     }
 }
